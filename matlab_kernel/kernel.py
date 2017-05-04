@@ -21,6 +21,7 @@ from metakernel import MetaKernel
 from . import __version__
 
 try:
+    raise ImportError
     from .wurlitzer import Wurlitzer
 except ImportError:
     Wurlitzer = None
